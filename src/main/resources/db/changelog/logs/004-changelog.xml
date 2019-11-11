@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+    <changeSet id="add-test-users" author="darakay" context="test">
+        <insert tableName="user">
+            <column name="id" value="4000"/>
+            <column name="first_name" value="AccountUser3"/>
+            <column name="last_name" value=""/>
+            <column name="login" value="user4"/>
+            <column name="password" value="qwerty"/>
+            <column name="refresh_token" value="123"/>
+            <column name="expires_at" type="timestamp" value="2020-07-10 00:00"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
